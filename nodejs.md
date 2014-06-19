@@ -1,4 +1,4 @@
-
+```bash
 [hefangshi@cp01-rdqa-pool388.cp01.baidu.com yog-app]$ pm2 ls
 /home/users/hefangshi/node_runtime/bin/pm2: line 4: command: nodejs: not found
 ┌──────────┬────┬─────────┬───────┬────────┬───────────┬────────┬─────────────┬─────────────┐
@@ -89,3 +89,4 @@
 │ app         │ 3  │ cluster │ 19014 │ online │         1 │ 3h     │ 850.148 MB   │ unactivated │
 │ Pm2Http8300 │ 4  │ fork    │ 6424  │ online │         0 │ 61m    │  16.785 MB   │ unactivated │
 └─────────────┴────┴─────────┴───────┴────────┴───────────┴────────┴──────────────┴─────────────┘
+```
