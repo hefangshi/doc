@@ -76,16 +76,9 @@ AMD模块化支持
   });
   ```
 
-1. 将模块ID替换为发布绝对路径
 
-  ```javascript
-  //from
-  define('amd', ['require', 'js/lib/common'], function(require){
-    var common = require('js/lib/common');
-  });
-  
-  //to
-  define('http://127.0.0.1:8080/js/lib/amd.js', ['require', 'http://127.0.0.1:8080/js/lib/common.js'], function(require){
-    var common = require('http://127.0.0.1:8080/js/lib/common.js');
-  });
-  ```
+1. 完成了路径到ID的替换后，使用requirejs的loader插件，配合map.json输出，将资源ID与实际路径匹配，具体细节包括
+
+  - ID需要添加统一的fis loader前缀
+  - 需要考虑其余loader plugin的兼容问题，确定是否可以组合使用，或替代其余loader plugin
+  - 具体依赖可以参考autoload插件，按页面解析依赖进行处理
