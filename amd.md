@@ -77,8 +77,8 @@ AMD模块化支持
   ```
 
 
-1. 完成了路径到ID的替换后，使用requirejs的loader插件，配合map.json输出，将资源ID与实际路径匹配，具体细节包括
+1. 完成了路径到ID的替换后，使用requirejs的alias或paths配置，配合map.json输出，将资源ID与实际路径匹
 
-  - ID需要添加统一的fis loader前缀
-  - 需要考虑其余loader plugin的兼容问题，确定是否可以组合使用，或替代其余loader plugin
+  - alias与paths的选择
   - 具体依赖可以参考autoload插件，按页面解析依赖进行处理
+  - md5 and roadmap
