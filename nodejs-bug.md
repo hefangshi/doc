@@ -9,3 +9,6 @@
 
 * child消息传递失效
   https://github.com/joyent/node/issues/8040
+
+* setTimeout嵌套BUG
+  https://github.com/joyent/node/issues/8105
